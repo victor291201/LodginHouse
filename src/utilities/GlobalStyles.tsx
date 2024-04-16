@@ -11,6 +11,12 @@ const GlobalStyles= StyleSheet.create({
     bg3:{
         backgroundColor:"#333333"
     },
+    bg4:{
+        backgroundColor:"white"
+    },
+    bg5:{
+        backgroundColor:"#EBEEF5"
+    },
     fc1:{
         color:"black"
     },
@@ -19,6 +25,18 @@ const GlobalStyles= StyleSheet.create({
     },
     fc3:{
         color:"#333333"
+    },
+    fc4:{
+        color:"#ED5E28"
+    },
+    fc5:{
+        color:"#C1D37F"
+    },
+    ff1:{
+        fontFamily:"Roboto"
+    },
+    ff2:{
+        fontFamily:"sans-serif-condensed"
     },
     wH100:{
         width:"100%",
@@ -37,6 +55,12 @@ const GlobalStyles= StyleSheet.create({
     },
     mt3:{
         marginTop:20
+    },
+    mt4:{
+        marginTop:25
+    },
+    mt5:{
+        marginTop:30
     },
     mb1:{
         marginBottom:10
@@ -82,6 +106,12 @@ const GlobalStyles= StyleSheet.create({
     },
     mv3:{
         marginVertical:20
+    },
+    m0:{
+        margin:0
+    },
+    p0:{
+        padding:0
     },
     pt1:{
         paddingTop:10
@@ -137,8 +167,23 @@ const GlobalStyles= StyleSheet.create({
     pv3:{
         marginVertical:20
     },
-    opacity7:{
-        opacity:0.7
+    opacity8:{
+        opacity:0.8
+    },
+    opacity6:{
+        opacity:0.6
+    },
+    opacity4:{
+        opacity:0.4
+    },
+    opacity2:{
+        opacity:0.2
+    },
+    br1:{
+        borderRadius:5
+    },
+    br2:{
+        borderRadius:10
     },
     fz1:{fontSize:5},
     fz2:{fontSize:10},
