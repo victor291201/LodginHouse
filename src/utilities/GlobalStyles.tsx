@@ -38,7 +38,7 @@ const GlobalStyles= StyleSheet.create({
     ff2:{
         fontFamily:"sans-serif-condensed"
     },
-    wH100:{
+    wh100:{
         width:"100%",
         height:"100%",
     },
@@ -188,6 +188,8 @@ const GlobalStyles= StyleSheet.create({
     fz1:{fontSize:5},
     fz2:{fontSize:10},
     fz3:{fontSize:15},
+    fz4:{fontSize:20},
+    fz5:{fontSize:25},
     fw1:{fontWeight:"200"},
     fw2:{fontWeight:"400"},
     fw3:{fontWeight:"600"},

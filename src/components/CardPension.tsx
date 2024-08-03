@@ -5,16 +5,16 @@ import { Header } from 'react-native/Libraries/NewAppScreen';
 import GlobalStyles from '../utilities/GlobalStyles';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-const CardPension = () => {
-      const {input1,opacity6,bg1,bg5,bg3,fz3,fz2,fw1,fw2,fw3,fw5,fc1,fc4,fc5,ph1,pv1,m0,pt1,wH100,flexCC,ff1,ff2,bg4,br2} = GlobalStyles;
+const CardPension = (props) => {
+      const {input1,opacity6,bg1,bg5,bg3,fz3,fz2,fw1,fw2,fw3,fw5,fc1,fc4,fc5,ph1,pv1,mb1,mt1,pt1,wH100,flexCC,ff1,ff2,bg4,br2} = GlobalStyles;
       return (
-						<View style={{width:"100%", ...bg4, height:"55%",...br2, borderColor:"grey", borderWidth:0.5,...ph1,...pv1}}>
+						<View style={{width:"100%", ...bg4, height:430,...br2, borderColor:"grey", borderWidth:0.5,...ph1,...pv1,...mb1,...mt1}}>
 							<View style={{width:"100%", height:"50%",...br2}}>
 								<Image style={{width:"100%", height:"100%",...br2}} source={require("../utilities/pension.jpeg")}/>
 								<View style={{width:50,height:50,position:"absolute",right:5,top:5,...bg4,...br2,...flexCC}}>
 									<Icon
-												color={bg3.backgroundColor}
-												name="bookmark-outline"
+												color={"gray"}
+												name={props.save?"bookmark":"bookmark-outline"}
 												size={35}
 										/>
 								</View>

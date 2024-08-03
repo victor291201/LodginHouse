@@ -8,7 +8,7 @@ import CardPension from '../components/CardPension';
 import Header1 from '../components/Header1';
 
 interface Props extends StackScreenProps<RootStackParams,"home">{}
-const Home = ({navigation,route}:Props) => {
+const Save = ({navigation,route}:Props) => {
     const [email,setEmail]=useState("");
     const [userName,setUserName]=useState("");
     const [password,setPassword]=useState("");
@@ -19,20 +19,21 @@ const Home = ({navigation,route}:Props) => {
                           ...wh100,
                           ...flexCC,
                           ...ff1}}>
+            
             <Header1 navigate={()=>navigation.push("messages")}/>
-            <View style={{height:"93%",width:"100%", ...bg5,...ph1,...pv1}}>
-              <FlatList
-                data={[{id:0},{id:1},{id:2},{id:3},{id:4},{id:5}]}
-                renderItem={(item)=>
-                  <TouchableOpacity onPress={()=>{navigation.push("lodgin")}}>
-                    <CardPension/>
-                  </TouchableOpacity>
-                  }
-                onEndReachedThreshold={0.4}
-                showsVerticalScrollIndicator={false}
-              />
-            </View>
-          </View>
+				<View style={{height:"93%",width:"100%", ...bg5,...ph1,...pv1}}>
+          <FlatList
+            data={[{id:0},{id:1},{id:2},{id:3},{id:4},{id:5}]}
+            renderItem={(item)=>
+              <TouchableOpacity onPress={()=>{navigation.push("lodgin")}}>
+                <CardPension save/>
+              </TouchableOpacity>
+              }
+            onEndReachedThreshold={0.4}
+            showsVerticalScrollIndicator={false}
+          />
+				</View>
+      </View>
       )
   }
-export default Home;
+export default Save;
